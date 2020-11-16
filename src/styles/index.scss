@@ -1,0 +1,24 @@
+#root{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+html{
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+button:active{
+   outline: none;
+   border: none;   
+}

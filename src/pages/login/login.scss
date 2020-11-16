@@ -1,0 +1,76 @@
+@import "../../styles/variables.scss";
+.login-logo{
+    height: 100%;
+    width: 75%;
+    background-image: url('../../images/3081783.jpg');
+    background-size: cover;
+}
+.login-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+.form-conatiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 25%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h2{
+    color: $primary;
+}
+
+span{
+    padding: 10px;
+    font-size: 18px;
+    color: $primary;
+}
+.form-group,.form-button-group{
+    width: 80%;
+    padding-top: 10px;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    
+  }
+  input{
+    border: none;
+    border-bottom: 2px solid #E9E9F0;
+    color: $primary;
+  }
+  input[type=text]:focus {
+    border: none;
+    border-bottom: 2px solid #E9E9F0;
+    outline: none;
+    
+    ::placeholder{
+        color: $primary;
+    }
+  }
+
+  label{
+      color: $primary;
+  }
+
+  button{
+      background-color: $primary;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      width: 40%;
+      height: 40px;
+  }
+
+  button:active{
+    outline: none;
+    border: none;   
+ }
+ button:focus {outline:0;}
