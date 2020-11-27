@@ -1,4 +1,13 @@
 @import "../../styles/variables.scss";
+@import '../../../node_modules/@syncfusion/ej2-base/styles/material.css';  
+@import '../../../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
+@import '../../../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
+@import '../../../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
+@import '../../../node_modules/@syncfusion/ej2-inputs/styles/material.css';  
+@import '../../../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import '../../../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../../../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+@import "../../../node_modules/@syncfusion/ej2-react-grids/styles/material.css";
 .dashboard-container{
     min-height: 100%;
 width: 100%;
@@ -8,11 +17,9 @@ flex-direction: row;
 }
 
 .side-nav{
-    
     width: 255px;
     background-color: $primary;
     order: 0;
-    
 }
 .Layout-aside-inner {
     position: fixed;
@@ -20,7 +27,7 @@ flex-direction: row;
   }
 .main-body{
     height: 100%;
-   flex-grow: 1;
+    flex: 1;
     display: flex;
     flex-direction: column;
     order: 1;
@@ -80,14 +87,14 @@ flex-direction: row;
     padding-right: 30px;
 }
 .revenue-chart{
-    height: 300px;
-    flex-grow: 3;
+    height: 400px;
+    flex: 3;
     background-color: white;
     border: rgb(180, 180, 180) 1px solid;
 }
 .user-chart{
-    height: 300px;
-    flex-grow: 1;
+    height: 400px;
+    flex: 1;
     background-color: white;
     border: rgb(180, 180, 180) 1px solid;
 }
