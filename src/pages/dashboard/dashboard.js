@@ -3,7 +3,7 @@ import './dashboard-page.scss'
 import Card from "../../widgets/cards/cards.js"
 import TransactionTable from "../../widgets/transaction-table/transaction-table.js";
 import axios from 'axios'
-import { useQuery, gql } from '@apollo/client';
+// import { useQuery, gql } from '@apollo/client';
 
 export default function Dashboard() {
     const pageSettings = { pageSize: 8 }
@@ -11,14 +11,14 @@ export default function Dashboard() {
     const [transctions, setTransactions] = useState()
     const [txToday, setTransactionsToday] = useState()
     const [revenue, setRevenue] = useState()
-    const EXCHANGE_RATES = gql`
-  query GetExchangeRates {
-    rates(currency: "USD") {
-      currency
-      rate
-    }
-  }
-`;
+//     const EXCHANGE_RATES = gql`
+//   query GetExchangeRates {
+//     rates(currency: "USD") {
+//       currency
+//       rate
+//     }
+//   }
+// `;
 
     const getRevenune = (arry) => {
         let sum = arry.reduce((acc, val) => {

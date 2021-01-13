@@ -9,7 +9,7 @@ export default class TransactionTable extends React.Component  {
     }
     
     render() {
-        let dateObject = {type:'date', format:'dd/MM/yyyy'};
+        // let dateObject = {type:'date', format:'dd/MM/yyyy'};
         return (<div className='control-pane'>
             <div className='control-section row'>
                 <GridComponent 
