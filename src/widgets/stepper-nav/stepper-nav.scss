@@ -1,0 +1,54 @@
+.nav {
+    // margin-bottom: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+   
+
+}
+
+.dot {
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1;
+    margin: 0 15px;
+    opacity: .4;
+    border: solid 1px;
+    background-color: rgba(223, 223, 223, 0.712);
+    // text-shadow: none;
+    // transition: opacity 1s ease,
+    //     text-shadow 1s ease;
+    // will-change: opacity, text-shadow;
+   
+}
+.dot::after{
+    
+}
+
+.nav .active {
+    color: white;
+   
+    background-color: rgb(7, 7, 51);
+    
+}
+.nav span:nth-of-type(odd){
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    
+}
+.step-count-container{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+.dot-text{
+
+color: rgb(0, 0, 0);
+opacity: .4;
+}
+.active-tex{
+    color: var(--blue);
+    opacity: 1;
+}

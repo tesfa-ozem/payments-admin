@@ -1,0 +1,58 @@
+@import "../../styles/variables.scss";
+.reg-form-container {
+  display: flex;
+  flex-direction: row;
+  background-color: $background-color;
+  height: 100%;
+}
+.wiz-container {
+  flex: auto 4;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+}
+.wiz-title {
+  flex: auto 1;
+  background-image: url(../../images/user.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 0%;
+  background-position-y: 100%;
+  background-size:80%;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  align-self: flex-end;
+}
+.wiz-title-text{
+    flex: auto 2;
+    font-family:'Source Sans Pro', sans-serif;
+}
+.wiz-nav {
+  flex: auto 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wiz-body {
+  flex: auto 5;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 4px 4px 8px #e4e4e4, -4px -4px 8px #e4e4e4;
+}
+svg#freepik_stories-accept-terms:not(.animated) .animable {
+  opacity: 0;
+}
+svg#freepik_stories-accept-terms.animated
+  #freepik--terms-and-conditions--inject-231 {
+  animation: 1s 1 forwards linear fadeIn;
+  animation-delay: 0s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

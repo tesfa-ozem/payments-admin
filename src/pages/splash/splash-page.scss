@@ -1,0 +1,110 @@
+@import "../../styles/variables.scss";
+.spash-container {
+  height: 100%;
+  background-image: url("../../images/splash-logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 70%;
+  background-position-y: 100%;
+
+  background-size:45%;
+  display: flex;
+  flex-direction: column;
+  background-color: $background-color;
+  padding: 16px;
+}
+.header-strip {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 8px;
+  background-color: $accent;
+}
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 32px;
+  align-items: flex-start;
+}
+.logo-container {
+  height: 113px;
+  width: 130px;
+  background-color: $background-color;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 40%;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: #4a6c8f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Rubik";
+    font-size: 20px;
+    cursor: default;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    color: $accent;
+    text-decoration: underline;
+  }
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+}
+.intro span:nth-child(1){
+   
+    font-size: 44px;
+    color: black;
+    font-weight: 700;
+}
+.intro span:nth-child(2){
+    word-wrap: break-word;
+}
+
+.button-container button{
+    height: 55px;
+    width: 150px;
+    border-radius: 4px;
+}
+.button-container button:nth-child(1){
+    background-color: $primary;
+    margin-right: 10px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    
+}
+.button-container button:nth-child(2){
+    background-color: white;
+    border:$primary solid 1.5px ;
+    color: $primary;
+    transition: border-width 0.1s linear;
+    transition: background-color 0.2s linear;
+    font-size: 18px;
+}
+.button-container button:nth-child(2):hover{
+    border:$primary solid 3px ;
+}
+.button-container button:nth-child(2):focus{
+    background-color: $primary;
+    color: white;
+}
